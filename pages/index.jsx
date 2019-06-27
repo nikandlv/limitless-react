@@ -1,13 +1,15 @@
-import './index.sass'
-import 'normalize.sass/_normalize.sass'
-import Example from '../components/Example'
+import Wrapper from '../components/Wrapper';
+import Header from '../components/Header/Header';
+import BodyDecoration from '../components/Wrapper/BodyDecoration';
+import Footer from '../components/Footer';
+import Main from '../components/Main';
 export default function Index() {
 	return (
-		  <div>
-			<h1>Welcome to NextJS boilerplate</h1>
-			<a href="https://github.com/nikandlv/nextjs-boilerplate">Github repo</a>
-			<Example/>
-		  </div>
-
+		  <Wrapper>
+			  <BodyDecoration />
+			  <Header />
+			  <Main />
+			  <Footer />
+		  </Wrapper>
 	);
 }

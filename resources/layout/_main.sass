@@ -1,0 +1,73 @@
+body
+    background-color: #fffffff
+.top-decoration
+    position: absolute
+    right: 0
+    top: 0
+    height: 100vh
+    max-height: 100vh
+.bottom-decoration
+    position: absolute
+    left: 0
+    bottom: 0
+.main
+    display: flex
+    position: relative
+    z-index: 10
+    & .page-counter
+        padding-top: 50px
+        & p
+            margin: 45px
+            color: #505050
+            font-weight: bold
+            font-size: 1rem
+            position: relative
+            width: 100px
+            cursor: pointer
+            &:active
+                color: darken($primary,10)
+            &.active
+                color: $primary
+                &:before
+                    transition: width 100ms
+                    width: 24px
+            &:before
+                content: ''
+                position: absolute
+                background-color: $primary
+                right: 0
+                top: 0
+                bottom: 0
+                margin: auto 0
+                width: 0px
+                height: 3px
+                transition: width 100ms
+    & .design-text
+            font-size: 10rem
+            color: #f6f5fc
+            @extend .styled-font
+            font-weight: bold
+            position: absolute
+            left: 118px
+            top: -1.2rem
+            z-index: -1
+    & .title
+        max-width: 50vw
+        font-weight: bold
+        font-size: 3.3rem
+        margin-bottom: 0
+        margin-top: 130px
+        white-space: nowrap
+        @extend .styled-font
+    & .subtitle
+        max-width: 40vw
+        color: #707070
+    & .mockup
+        position: relative
+        width: 100%
+        & svg
+            position: absolute
+            top: -50px
+            right: 17vw
+            z-index: -1 
+            height: 80vh
