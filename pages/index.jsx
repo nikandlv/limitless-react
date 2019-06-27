@@ -1,4 +1,5 @@
-import('./index.sass')
+import './index.sass'
+import 'normalize.sass/_normalize.sass'
 import Example from '../components/Example'
 export default function Index() {
 	return (
