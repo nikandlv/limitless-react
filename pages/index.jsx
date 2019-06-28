@@ -9,6 +9,7 @@ export default function Index() {
 			  <BodyDecoration />
 			  <Header />
 			  <Main />
+			  <div className="flex-grow-1"/>
 			  <Footer />
 		  </Wrapper>
 	);

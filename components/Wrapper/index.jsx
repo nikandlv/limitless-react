@@ -3,7 +3,7 @@ import '../../resources/App.sass'
 
 export default function Wrapper(props) {
     return (
-        <div>
+        <div className="wrapper">
             {props.children}
         </div>
     )
