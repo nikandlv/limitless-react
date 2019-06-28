@@ -1,6 +1,6 @@
 header
     display: flex
-    padding: 48px 48px
+    padding: 4vw
     align-items: center
     z-index: 100
     position: relative
@@ -8,7 +8,11 @@ header
     @extend .flex-grow-12
 .search-icon-spacing
     @extend .flex-grow-1
-.end-icons svg
-    margin: 10px
+    margin-left: 20px
+.end-icons 
+    white-space: nowrap
+    & svg
+        margin: 10px
+    
 .search-input
     margin-left: 20px

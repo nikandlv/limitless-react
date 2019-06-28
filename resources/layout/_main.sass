@@ -1,5 +1,6 @@
 body
-    background-color: #fffffff
+    background-color: #ffffff
+    overflow-x: hidden
 .top-decoration
     position: absolute
     right: 0
@@ -71,3 +72,65 @@ body
             right: 17vw
             z-index: -1 
             height: 80vh
+@media (max-width: 750px)
+    body,html
+        overflow-x: hidden
+    header
+        input
+            display: none
+    .main
+        flex-direction: column-reverse
+        & button
+            display: block
+            margin: 0 auto
+        & p
+            max-width: 100% !important
+            text-align: center
+            &.title
+                    font-size: 2.2rem
+                    white-space: pre-wrap
+            &.subtitle
+                    font-size: 1.2rem
+        & .mockup svg
+            top: unset !important
+            right: unset !important
+        & .page-counter
+            display: flex
+            position: absolute
+            top: -38px
+            left: 0
+            max-width: 100%
+            & p
+                &:before
+                    bottom: -10px
+                    top: unset
+                    right: 0px
+                    left: 0px 
+                    margin: 0 auto
+    footer
+        bottom: 0 !important
+        overflow: scroll
+        max-width: 100%
+        position: relative !important
+        #menu
+            min-width: 32px
+            min-height: 32px
+        .menu
+            &.open
+                width: 100%
+                height: 100%
+                transform: translate(0,0) !important
+                border-radius: 0 !important
+                & span
+                    display: none
+    .top-decoration
+        max-height: unset !important
+        height: unset !important
+        & svg *
+            max-width: 100%
+            overflow: hidden
+    .bottom-decoration
+        bottom: unset !important
+        & svg *
+            max-width: 100%
+            overflow: hidden

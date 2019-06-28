@@ -4,6 +4,8 @@ Limitless is a landing page design
 
 Mad props to <a href="https://dribbble.com/victorniculici" title="Chanut">Victor Niculici</a> for the design
 
+The whole project was written in 4 hours max + 2 hours for making it responsive
+
 #### Run
 
 `npm install`
