@@ -8,18 +8,20 @@ The whole project was written in 4 hours max + 2 hours for making it responsive
 
 #### Run
 
-`npm install`
+```
+npm install
 
-`npm run dev`
-
+npm run dev
+```
 Visit `localhost:3000`
 
 ### Export
 
-`npm run build`
+```
+npm run build
 
-`npm run export`
-
+npm run export
+```
 #### Demo
 
 <a href="https://neoxus.ir/demo/limitless-react">Demo</a>
